@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HairPro™ – Brosse Lissante Chauffante</title>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      background: #f9fafb;
+      color: #111827;
+    }
+    header {
+      background: linear-gradient(to right, #4f46e5, #3b82f6); /* Elegant blue gradient */
+      padding: 30px 20px;
+      text-align: center;
+      position: relative;
+    }
+    header h1 {
+      font-size: 2.8em;
+      margin: 0;
+      color: white;
+    }
+    .cart-link {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      color: white;
+      font-weight: bold;
+    }
+    .product-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 50px 20px;
+    }
+    .product-image {
+      max-width: 400px;
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+    .product-info {
+      max-width: 600px;
+      margin-top: 30px;
+      text-align: center;
+    }
+    .product-info h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .product-info p {
+      font-size: 1.1em;
+      margin-bottom: 10px;
+    }
+    .price {
+      font-size: 1.8em;
+      color: #10b981;
+      margin: 20px 0;
+    }
+    .buy-button {
+      background-color: #4f46e5; /* Elegant primary color */
+      border: none;
+      padding: 15px 25px;
+      font-size: 1.1em;
+      color: white;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .delivery-info {
+      margin-top: 40px;
+      font-size: 0.95em;
+      color: #6b7280;
+      text-align: center;
+    }
+    .reviews {
+      margin-top: 40px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 700px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    .review {
+      margin-bottom: 20px;
+    }
+    .review strong {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .faq {
+      margin-top: 40px;
+      background: #ffffff;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 700px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.6s ease-out;
+    }
+    .faq.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .faq h3 {
+      margin-bottom: 20px;
+    }
+    .faq .question {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+    .faq .answer {
+      margin-bottom: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f3f4f6;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>HairPro™</h1>
+    <a href="#" class="cart-link snipcart-checkout">🛒 (<span class="snipcart-items-count"></span>) <span class="snipcart-total-price"></span></a>
+  </header>
+
+  <section class="product-container">
+    <img src="https://cdn.shopify.com/s/files/1/0752/6435/7246/files/brosse-lissante-hairpro.jpg?v=1689608004" alt="Brosse Lissante HairPro" class="product-image">
+    <div class="product-info">
+      <h2>Brosse Lissante Chauffante HairPro™</h2>
+      <p>Obtenez des cheveux lisses et brillants en quelques minutes. Conçue avec la technologie ionique pour réduire les frisottis et améliorer la brillance naturelle des cheveux.</p>
+      <div class="price">60 €</div>
+      <button 
+        class="buy-button snipcart-add-item"
+        data-item-id="hairpro-brush"
+        data-item-name="Brosse Lissante HairPro"
+        data-item-price="60.00"
+        data-item-url="/"
+        data-item-description="Brosse lissante chauffante HairPro™ avec technologie ionique."
+        data-item-image="https://cdn.shopify.com/s/files/1/0752/6435/7246/files/brosse-lissante-hairpro.jpg?v=1689608004">
+        Ajouter au panier
+      </button>
+      <div class="delivery-info">
+        🚚 Livraison gratuite en 4 à 7 jours ouvrés dans toute la France. Suivi fourni après expédition.
+      </div>
+    </div>
+  </section>
+
+  <section class="reviews">
+    <h3>Ce que disent nos clientes :</h3>
+    <div class="review">
+      <strong>⭐️⭐️⭐️⭐️⭐️ – Sarah, Paris</strong>
+      Produit incroyable, mes cheveux sont lisses en 5 minutes ! Je recommande à 100%.
+    </div>
+    <div class="review">
+      <strong>⭐️⭐️⭐️⭐️⭐️ – Laura, Marseille</strong>
+      Bonne qualité, reçu en 5 jours avec un suivi clair. Très satisfaite de mon achat.
+    </div>
+    <div class="review">
+      <strong>⭐️⭐️⭐️⭐️ – Emma, Lyon</strong>
+      Efficace et design élégant. Je l’utilise tous les matins !
+    </div>
+  </section>
+
+  <section class="faq" id="faq">
+    <h3>Foire aux Questions (FAQ)</h3>
+    <div class="question">Quel est le délai de livraison ?</div>
+    <div class="answer">Le délai de livraison est généralement de 4 à 7 jours ouvrés.</div>
+    <div class="question">Puis-je retourner le produit si je ne suis pas satisfait ?</div>
+    <div class="answer">Oui, vous avez 14 jours pour retourner le produit et être remboursé.</div>
+    <div class="question">Est-ce que la brosse convient à tous les types de cheveux ?</div>
+    <div class="answer">Oui, la brosse HairPro™ est conçue pour tous types de cheveux.</div>
+    <div class="question">La brosse est-elle garantie ?</div>
+    <div class="answer">Oui, elle est garantie pendant 12 mois contre tout défaut de fabrication.</div>
+  </section>
+<section class="tracking" style="text-align: center; padding: 40px 20px; background: #fff;"> <h3>📦 Suivi de commande</h3> <p>Entrez votre numéro de suivi pour suivre l'état de votre livraison :</p> <a href="https://yourbrand.aftership.com/track" target="_blank" style="display: inline-block; background: #10b981; color: white; padding: 15px 25px; font-size: 1.1em; font-weight: bold; border-radius: 8px; text-decoration: none;"> Accéder au Suivi </a> </section>
+
+  <footer>
+    © 2025 HairPro™ – Tous droits réservés. Livraison gratuite & satisfait ou remboursé.
+  </footer>
+
+  <!-- Snipcart -->
+  <script>
+    window.SnipcartSettings = {
+        publicApiKey: 'MzZiYzY1YmMtNmE4Yi00NTZkLWIyMjAtMDY2NTM5Y2I0ZDdlNjM4ODM0NTc4Nzg1NjEzNzU3',
+        loadStrategy: 'on-user-interaction',
+        currency: 'eur'
+    };
+  </script>
+  <script async src="https://cdn.snipcart.com/themes/v3.3.0/default/snipcart.js"></script>
+  <div hidden id="snipcart" data-api-key="MzZiYzY1YmMtNmE4Yi00NTZkLWIyMjAtMDY2NTM5Y2I0ZDdlNjM4ODM0NTc4Nzg1NjEzNzU3"></div>
+</body>
+</html>
